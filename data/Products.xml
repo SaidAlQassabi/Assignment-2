@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entities.Product_-Lease>
+  <code>b29e</code>
+  <proType>L</proType>
+  <startDate>2017-01-13</startDate>
+  <endDate>2018-01-12</endDate>
+  <address>
+    <city>Lincoln</city>
+    <state>NE</state>
+    <country>USA</country>
+    <zip>68588-0115</zip>
+    <street>179 West Lane</street>
+  </address>
+  <customerName>CAS International Fellows</customerName>
+  <deposit>450.00</deposit>
+  <monthlyCost>400.00</monthlyCost>
+</entities.Product_-Lease><entities.Product_-Amenity>
+  <code>ff23</code>
+  <proType>A</proType>
+  <cost>Furniture - Nightstand</cost>
+</entities.Product_-Amenity><entities.Product_-Sale>
+  <code>fp12</code>
+  <proType>S</proType>
+  <address>
+    <city>Omaha</city>
+    <state> NE</state>
+    <country> USA</country>
+    <zip> 68144</zip>
+    <street>3555 South 140th Plaza</street>
+  </address>
+  <totalCost>215000.00</totalCost>
+  <downPayment>10000.00</downPayment>
+  <monthlyPayment>600.00</monthlyPayment>
+  <payableMonths>24</payableMonths>
+  <interestRate>4.00</interestRate>
+  <dateTime>2016-10-21 13:10</dateTime>
+</entities.Product_-Sale><entities.Product_-Parking>
+  <code>90fa</code>
+  <proType>P</proType>
+  <parkingfee>25.00</parkingfee>
+</entities.Product_-Parking><entities.Product_-Sale>
+  <code>1239</code>
+  <proType>S</proType>
+  <address>
+    <city>Ashwaubenon</city>
+    <state> WI</state>
+    <country> USA</country>
+    <zip> 54304</zip>
+    <street>755 Willard Drive</street>
+  </address>
+  <totalCost>11000.00</totalCost>
+  <downPayment>1000.00</downPayment>
+  <monthlyPayment>70.00</monthlyPayment>
+  <payableMonths>18</payableMonths>
+  <interestRate>3.59</interestRate>
+  <dateTime>2018-01-16 15:30</dateTime>
+</entities.Product_-Sale><entities.Product_-Sale>
+  <code>782g</code>
+  <proType>S</proType>
+  <address>
+    <city>Cedar Falls</city>
+    <state> IA</state>
+    <country> USA</country>
+    <zip> 50613</zip>
+    <street>6301 University Ave</street>
+  </address>
+  <totalCost>4200000.00</totalCost>
+  <downPayment>200000.00</downPayment>
+  <monthlyPayment>8750.00</monthlyPayment>
+  <payableMonths>36</payableMonths>
+  <interestRate>2.11</interestRate>
+  <dateTime>2016-11-10 10:00</dateTime>
+</entities.Product_-Sale><entities.Product_-Parking>
+  <code>3289</code>
+  <proType>P</proType>
+  <parkingfee>55.00</parkingfee>
+</entities.Product_-Parking><entities.Product_-Amenity>
+  <code>32f4</code>
+  <proType>A</proType>
+  <cost>Router</cost>
+</entities.Product_-Amenity><entities.Product_-Lease>
+  <code>3y92</code>
+  <proType>L</proType>
+  <startDate>2017-11-24</startDate>
+  <endDate>2018-11-23</endDate>
+  <address>
+    <city>Omaha</city>
+    <state>NE</state>
+    <country>USA</country>
+    <zip>68521-5593</zip>
+    <street>449 3rd Ave</street>
+  </address>
+  <customerName>Stony Brook</customerName>
+  <deposit>900.00</deposit>
+  <monthlyCost>900.00</monthlyCost>
+</entities.Product_-Lease><entities.Product_-Parking>
+  <code>90fb</code>
+  <proType>P</proType>
+  <parkingfee>20.00</parkingfee>
+</entities.Product_-Parking><entities.Product_-Lease>
+  <code>xer4</code>
+  <proType>L</proType>
+  <startDate>2016-10-07</startDate>
+  <endDate>2017-10-06</endDate>
+  <address>
+    <city>Souix City</city>
+    <state> IA</state>
+    <country> USA</country>
+    <zip> 44982</zip>
+    <street>375 Northwoods</street>
+  </address>
+  <customerName>Stony Brook</customerName>
+  <deposit>1299.00</deposit>
+  <monthlyCost>1000.00</monthlyCost>
+</entities.Product_-Lease><entities.Product_-Amenity>
+  <code>yp23</code>
+  <proType>A</proType>
+  <cost>Basic Cable</cost>
+</entities.Product_-Amenity>

@@ -1,0 +1,73 @@
+{
+  "name": "Clark Consultants",
+  "address": {
+    "city": "Lincoln",
+    "state": "NE",
+    "country": "USA",
+    "zip": "68588-0115",
+    "street": "259 Concorde Suites"
+  },
+  "cusCode": "M001",
+  "type": "G",
+  "primaryContact": "231"
+}{
+  "name": "CAS International Fellows",
+  "address": {
+    "city": "Lincoln",
+    "state": "NE",
+    "country": "USA",
+    "zip": "68503",
+    "street": "1223 Oldfather Hall"
+  },
+  "cusCode": "M002",
+  "type": "L",
+  "primaryContact": "944c"
+}{
+  "name": "Valueless Club",
+  "address": {
+    "city": "Culver City",
+    "state": "CA",
+    "country": "USA",
+    "zip": "90230",
+    "street": "123 Venture Way"
+  },
+  "cusCode": "M003",
+  "type": "L",
+  "primaryContact": "306a"
+}{
+  "name": "Stony Brook",
+  "address": {
+    "city": "Fort Meade",
+    "state": "MD",
+    "country": "USA",
+    "zip": "20755",
+    "street": "9800 Savage Rd"
+  },
+  "cusCode": "M004",
+  "type": "G",
+  "primaryContact": "321f"
+}{
+  "name": "Hewlett Industries",
+  "address": {
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA",
+    "zip": "60601",
+    "street": "1060 West Addison"
+  },
+  "cusCode": "M005",
+  "type": "G",
+  "primaryContact": "bbchar"
+}{
+  "name": "Gregory Smith",
+  "address": {
+    "city": "Omaha",
+    "state": "NE",
+    "country": "USA",
+    "zip": "68500",
+    "street": "456 West 7th St."
+  },
+  "cusCode": "M006",
+  "type": "L",
+  "primaryContact": "321dr"
+}
