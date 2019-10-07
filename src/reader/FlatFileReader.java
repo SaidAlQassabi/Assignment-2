@@ -7,6 +7,7 @@ import java.util.Scanner;
 import entities.Address;
 import entities.Customer;
 import entities.Email;
+import entities.Invoice;
 import entities.Person;
 import entities.Product;
 import entities.Name;
@@ -198,6 +199,42 @@ public class FlatFileReader {
 			}
 			sc.close();
 			return productList;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public ArrayList<Invoice> readInvoice() {
+		Scanner sc = null;
+
+		try {
+			sc = new Scanner(new File("data/Invoice.dat"));
+			sc.nextLine(); // reads the number of records from the first line
+
+			// This Person ArrayList stores the Person objects
+			ArrayList<Invoice> invoiceList = new ArrayList<Invoice>();
+
+			while (sc.hasNext()) {
+				String line = sc.nextLine(); // reads each line starting from 2nd line
+				String data[] = line.split(";"); // tokenizes the line and stores in a tring array
+
+				// Stores the 4 array elements of each line into strings
+				String cusCode = data[0];
+				String realCode = data[1];
+				String date = data[2];
+				String productList[] = Product.split(",");
+				String product = productList[1];
+				
+
+				// Creates a Person object
+				Invoice invoice = new Invoice(cusCode, realCode, date, productList);
+
+				// Adds the Person object into Person ArrayList
+				invoiceList.add(invoice);
+			}
+			sc.close();
+			return invoiceList;
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			return null;

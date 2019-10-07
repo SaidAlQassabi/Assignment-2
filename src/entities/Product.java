@@ -260,4 +260,9 @@ public abstract class Product {
 			this.cost = cost;
 		}
 	}
+
+	public static String[] split(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

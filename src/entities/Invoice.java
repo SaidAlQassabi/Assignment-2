@@ -4,14 +4,14 @@ public class Invoice {
 	private String cusCode;
 	private String realCode;
 	private String date;
-	private Product product;
+	private String[] product;
 
-	public Invoice(String cusCode, String realCode, String date, Product product) {
+	public Invoice(String cusCode, String realCode, String date, String[] productList) {
 		super();
 		this.cusCode = cusCode;
 		this.realCode = realCode;
 		this.date = date;
-		this.product = product;
+		this.product = productList;
 	}
 
 	public String getCusCode() {
@@ -38,11 +38,11 @@ public class Invoice {
 		this.date = date;
 	}
 
-	public Product getProduct() {
+	public String[] getProduct() {
 		return product;
 	}
 
-	public void setProduct(Product product) {
+	public void setProduct(String[] product) {
 		this.product = product;
 	}
 
