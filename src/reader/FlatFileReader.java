@@ -118,10 +118,10 @@ public class FlatFileReader {
 				Address addressobj = new Address(street, city, state, zip, country);
 
 				// Creates a Person object
-				Customer Customer = new Customer(cusCode, type, primaryContact, name, addressobj);
+				Customer customer = new Customer(cusCode, type, primaryContact, name, addressobj);
 
 				// Adds the Person object into Person ArrayList
-				customerList.add(Customer);
+				customerList.add(customer);
 			}
 			sc.close();
 			return customerList;
@@ -162,7 +162,7 @@ public class FlatFileReader {
 					String deposit = data[6];
 					String monthlycost = data[7];
 					Address addressobj = new Address(street, city, state, zip, country);
-					entities.Product.Lease product = new Product.Lease(code, proType, startDate, endDate, addressobj,
+					entities.Product.Agreements.Lease product = new Product.Agreements.Lease(code, proType, startDate, endDate, addressobj,
 							customerName, deposit, monthlycost);
 					productList.add(product);
 				} else if (proType.charAt(0) == 'S') {
@@ -182,17 +182,17 @@ public class FlatFileReader {
 					String interestRate = data[8];
 
 					Address addressobj = new Address(street, city, state, zip, country);
-					entities.Product.Sale product = new Product.Sale(code, proType, dateTime, addressobj, totalCost,
+					entities.Product.Agreements.Sale product = new Product.Agreements.Sale(code, proType, dateTime, addressobj, totalCost,
 							downPayment, monthlyPayment, payableMonths, interestRate);
 					productList.add(product);
 				} else if (proType.charAt(0) == 'P') {
 					String cost = data[2];
 
-					entities.Product.Parking product = new Product.Parking(code, proType, cost);
+					entities.Product.Service.Parking product = new Product.Service.Parking(code, proType, cost);
 					productList.add(product);
 				} else if (proType.charAt(0) == 'A') {
 					String parkingfee = data[2];
-					entities.Product.Amenity product = new Product.Amenity(code, proType, parkingfee);
+					entities.Product.Service.Amenity product = new Product.Service.Amenity(code, proType, parkingfee);
 					productList.add(product);
 				}
 
@@ -220,15 +220,17 @@ public class FlatFileReader {
 				String data[] = line.split(";"); // tokenizes the line and stores in a tring array
 
 				// Stores the 4 array elements of each line into strings
-				String cusCode = data[0];
-				String realCode = data[1];
-				String date = data[2];
-				String productList[] = Product.split(",");
-				String product = productList[1];
+				String invCode = data[0];
+				String cusCode = data[1];
+				String perCode = data[2];
+				String date = data[3];
+				String product = data[4];
+				String productList[] = product.split(",");
+				String product1 = productList[1];
 				
 
 				// Creates a Person object
-				Invoice invoice = new Invoice(cusCode, realCode, date, productList);
+				Invoice invoice = new Invoice(invCode, cusCode, perCode, date, productList);
 
 				// Adds the Person object into Person ArrayList
 				invoiceList.add(invoice);

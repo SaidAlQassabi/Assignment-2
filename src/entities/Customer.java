@@ -55,5 +55,34 @@ public class Customer {
 	public void setPrimaryContact(String primaryContact) {
 		this.primaryContact = primaryContact;
 	}
+	
+	public double getTax() {
+		return 0;
+	}
+	
+	public double getDiscount() {
+		return 0;
+	}
 
+	public double addFee() {
+		return 0;
+	}
+	
+	public static class General extends Customer {
+
+		public General(String cusCode, String type, String primaryContact, String name, Address address) {
+			super(cusCode, type, primaryContact, name, address);
+			// TODO Auto-generated constructor stub
+		}
+		
+	}
+	
+	public static class LowIncome extends Customer {
+
+		public LowIncome(String cusCode, String type, String primaryContact, String name, Address address) {
+			super(cusCode, type, primaryContact, name, address);
+			// TODO Auto-generated constructor stub
+		}
+		
+	}
 }

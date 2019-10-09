@@ -4,10 +4,6 @@ public abstract class Product {
 
 	public String code;
 	public String proType;
-	// private Lease lease;
-	// private Sale sale;
-	// private Amenity amenity;
-	// private Parking parking;
 	public String startDate;
 	public String endDate;
 	public Address address;
@@ -21,8 +17,17 @@ public abstract class Product {
 	public String interestRate;
 	public String dateTime;
 	public String parkingfee;
+	
+	public double getTax() {
+		return 0;
+	}
+	
+	public double grandTotal() {
+		return 0;
+	}
 
-	public static class Lease extends Product {
+	public static class Agreements extends Product {
+	public static class Lease extends Agreements {
 
 		public Lease(String code, String proType, String startDate, String endDate, Address address,
 				String customerName, String deposit, String monthlyCost) {
@@ -103,7 +108,7 @@ public abstract class Product {
 
 	}
 
-	public static class Sale extends Product {
+	public static class Sale extends Agreements {
 
 		public Sale(String code, String proType, String dateTime, Address address, String totalCost, String downPayment,
 				String monthlyPayment, String payableMonths, String interestRate) {
@@ -192,8 +197,10 @@ public abstract class Product {
 		}
 
 	}
+	}
 
-	public static class Parking extends Product {
+	public static class Service extends Product {
+	public static class Parking extends Service {
 		public Parking(String code, String proType, String parkingfee) {
 			super();
 			this.code = code;
@@ -226,7 +233,7 @@ public abstract class Product {
 		}
 	}
 
-	public static class Amenity extends Product {
+	public static class Amenity extends Service {
 		private String cost;
 
 		public Amenity(String code, String proType, String cost) {
@@ -260,9 +267,6 @@ public abstract class Product {
 			this.cost = cost;
 		}
 	}
-
-	public static String[] split(String string) {
-		// TODO Auto-generated method stub
-		return null;
 	}
+	
 }
