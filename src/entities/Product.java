@@ -18,11 +18,11 @@ public abstract class Product {
 	public String dateTime;
 	public String parkingfee;
 	
-	public double getTax() {
+	public abstract double getTax() {
 		return 0;
 	}
 	
-	public double grandTotal() {
+	public abstract double grandTotal() {
 		return 0;
 	}
 
@@ -104,6 +104,16 @@ public abstract class Product {
 
 		public void setMonthlyCost(String monthlyCost) {
 			this.monthlyCost = monthlyCost;
+		}
+		
+		public double getTax() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		public double grandTotal() {
+			// TODO Auto-generated method stub
+			return 0;
 		}
 
 	}
@@ -195,7 +205,26 @@ public abstract class Product {
 		public void setInterestRate(String interestRate) {
 			this.interestRate = interestRate;
 		}
+		
+		public double getTax() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		public double grandTotal() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	}
 
+	public double getTax() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double grandTotal() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	}
 
@@ -230,6 +259,16 @@ public abstract class Product {
 
 		public void setParkingfee(String parkingfee) {
 			this.parkingfee = parkingfee;
+		}
+		
+		public double getTax() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		public double grandTotal() {
+			// TODO Auto-generated method stub
+			return 0;
 		}
 	}
 
@@ -266,6 +305,28 @@ public abstract class Product {
 		public void setCost(String cost) {
 			this.cost = cost;
 		}
+		
+		public double getTax() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		public double grandTotal() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	}
+
+	@Override
+	public double getTax() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double grandTotal() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	}
 	
